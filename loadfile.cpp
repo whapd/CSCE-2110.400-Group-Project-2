@@ -9,37 +9,76 @@ int loadfile()
 {
 
     string line;
-    vectore<string> buildings;
+    vector<string> buildings;
+    vector<string> connections;
+    vector<string> facilities;
+    vector<string> departments;
 
-    ifstream infile("buildings.txt");
-    if (!infile.is_open())
+    string filename1 = "buildings.txt";
+    string filename2 = "connections.txt";
+    string filename3 = "facilities.txt";
+    string filename4 = "departments.txt";
+
+
+    ifstream infile1("buildings.txt");
+    if (!infile1.is_open())
     {
         cout << "Error" << endl;
         return 1;
     }
 
-    while (getline(infile,line))
+    while (getline(infile1,line))
     {
         buildings.push_back(line);
     }
     cout<<"Loaded file: " << filename1 << endl;
-    infile.close();
+    infile1.close();
 
 
 
 
-    ifstream infile("connections.txt");
+    ifstream infile2("connections.txt");
+    if (!infile2.is_open())
+    {
+        cout << "Error" << endl;
+        return 1;
+    }
+
+    while (getline(infile2,line))
+    {
+        connections.push_back(line);
+    }
     cout<<"Loaded file: " << filename2 << endl;
+    infile2.close();
 
 
-    ifstream infile("facilities.txt");
+    ifstream infile3("facilities.txt");
+    if (!infile3.is_open())
+    {
+        cout << "Error" << endl;
+        return 1;
+    }
+
+    while (getline(infile3,line))
+    {
+        facilities.push_back(line);
+    }
     cout<<"Loaded file: " << filename3 << endl;
+    infile3.close();
 
+    ifstream infile4("departments.txt");
+    if (!infile4.is_open())
+    {
+        cout << "Error" << endl;
+        return 1;
+    }
 
-    ifstream infile("departments.txt");
+    while (getline(infile4,line))
+    {
+        departments.push_back(line);
+    }
     cout<<"Loaded file: " << filename4 << endl;
-
-
+    infile4.close();
 
 
 
