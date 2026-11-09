@@ -1,7 +1,6 @@
 
-
-
-
+Dylan Rudolph:
+So far I have implemented the hash function within the files HashTable.h and HashTable.cpp
 
 Ben Schockmel:
 I created the github repository, and attempted to create a class that reads the data from the files and sorts them into strings.
