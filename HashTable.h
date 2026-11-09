@@ -12,14 +12,15 @@ class HashTable {
         HashTable(int x);
 
         // Returns the buckets (private value) as int
-        int getBuckets();
+        int getBuckets() const;
 
         // Functions to hash, either string to a usable hash key int or hash key int to position within hash table
-        int hash(std::string ID);
+        int hashString(std::string ID);
         int hashFunct(int inp);
 
-        // Insert and delete functions
+        // Insert, search, and delete functions FILL OUT INSERT
         void insert(int key);
+        bool search (int key);
         void del(int key);
     private:
         // Buckets, the number of buckets within the hash table
