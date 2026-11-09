@@ -1,0 +1,7 @@
+
+
+
+
+
+Ben Schockmel:
+I created the github repository, and attempted to create a class that reads the data from the files and sorts them into strings.
