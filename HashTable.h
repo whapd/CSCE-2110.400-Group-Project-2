@@ -4,7 +4,8 @@
 #include <vector>
 
 // HashTable.h
-// Includes the class HashTable, involving the hash table (as a vector of vectors of ints) with int keys hashed from string ID values and functions for the hash table
+// Includes the class HashTable, involving the hash table (as a vector of vectors of ints) with int keys hashed from string ID values and functions for the hash table.
+// Vector of vectors structure employs separate chaining to handle collisions.
 
 class HashTable {
     public:
@@ -18,9 +19,9 @@ class HashTable {
         int hashString(std::string ID);
         int hashFunct(int inp);
 
-        // Insert, search, and delete functions FILL OUT INSERT
+        // Insert, search, and delete functions
         void insert(int key);
-        bool search (int key);
+        int search (int key);
         void del(int key);
     private:
         // Buckets, the number of buckets within the hash table
