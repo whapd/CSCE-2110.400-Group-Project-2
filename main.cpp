@@ -1,32 +1,36 @@
 #include <iostream>
 #include <cctype>
+#include "loadfile.h"
 using namespace std;
 
 // printMenu prints out full menu upon call
 void printMenu() {
 	cout << endl << "===== Campus Resource Reservation System =====" << endl
-             << " 1. View All Facilities" << endl
-             << " 2. Search Facility by ID" << endl
-	     << " 3. Search Facility by Name" << endl
-	     << " 4. Search Facility by Category" << endl
-             << " 5. View Campus Graph" << endl
-             << " 6. Display Graph Counts and Degrees" << endl
-             << " 7. Find Reachable Buildings" << endl
-	     << " 8. Find Shortest Path" << endl
-             << " 9. Add Department" << endl
-             << " 10. Search Department" << endl
-             << " 11. Display Department Hierarchy" << endl
-             << " 12. Run Preorder Traversal" << endl
-	     << " 13. Run Postorder Traversal" << endl
-	     << " 14. Run Level-order Traversal" << endl
-	     << " 15. Department Statistics" << endl
-	     << " 16. Facility Category Report" << endl
-	     << " 17. Graph Connectivity Report" << endl
-             << " 18. Exit" << endl;
+		<< " 1. View All Facilities" << endl
+		<< " 2. Search Facility by ID" << endl
+		<< " 3. Search Facility by Name" << endl
+		<< " 4. Search Facility by Category" << endl
+		<< " 5. View Campus Graph" << endl
+		<< " 6. Display Graph Counts and Degrees" << endl
+		<< " 7. Find Reachable Buildings" << endl
+		<< " 8. Find Shortest Path" << endl
+		<< " 9. Add Department" << endl
+		<< " 10. Search Department" << endl
+		<< " 11. Display Department Hierarchy" << endl
+		<< " 12. Run Preorder Traversal" << endl
+		<< " 13. Run Postorder Traversal" << endl
+		<< " 14. Run Level-order Traversal" << endl
+		<< " 15. Department Statistics" << endl
+		<< " 16. Facility Category Report" << endl
+		<< " 17. Graph Connectivity Report" << endl
+		<< " 18. Exit" << endl;
 }
 
 int main() {
 	// DO: GET FILENAME AND LOAD FILES
+	cout << "Loading campus database..." << endl;
+	loadfile();
+	cout << "Loading complete." << endl;
 
 	int choice = 0;
 	while (choice != 18) {
