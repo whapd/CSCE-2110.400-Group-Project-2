@@ -33,29 +33,35 @@ int HashTable::hashFunct(int inp) {
         return val;
 }
 
-// insert() inserts a key into the hash table
-/* void HashTable::insert(int key) {
+// insert() inserts a key into the hash table, given a key to insert
+void HashTable::insert(int key) {
         int index = hashFunct(key);
-        hashTable[index] = push_back(key);
-} */
+        hashTable[index].push_back(key);
+}
 
-// search() searches the hash table at target index for the target key; if it finds the key in the table, returns true, and if not, returns false
-/* bool HashTable::search(int key) {
+// search() searches the hash table at target index for the target key; if it finds the key in the table, returns its position within its bucket's vector (successful search), otherwise, returns -1 (unsuccessful search)
+int HashTable::search(int key) {
         int index = hashFunct(key);
-        auto it = find(hashTable[index].begin(), hashTable[index].end(), key);
-        if (it != hashTable[index].end()) {
-                std::cout << "Key found at index " << index << ".\n";
-                return true;
+
+        for (int i = 0; i < hashTable[index].size(); ++i) {
+                if (hashTable[index][i] == key) {
+                        std::cout << "Value found at position " << i << "!\n";
+                        return i;
+                }
+        }
+
+        return -1;
+}
+
+// del() builds off of search() function. If the search is successful (returns key's position), removes key at position. If search is unsuccessful (returns -1), nothing happens
+void HashTable::del(int key) {
+        int index = hashFunct(key);
+        int pos = search(key);
+        if (pos != -1) {
+                hashTable[index].erase(hashTable[index].begin() + pos);
+                std::cout << "Value successfully removed.\n";
         }
         else {
-                std::cout << "Key not found.\n";
-                return false;
+                std::cout << "Value not found in table.\n";
         }
-} */
-
-// del() builds off of search() function. If the search returns true, the key at that index is deleted
- /* void HashTable::del(int key) {
-        if (search(key) == true) {
-                table[index].erase(it);
-        }
-} */
+}
