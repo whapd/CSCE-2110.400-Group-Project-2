@@ -23,7 +23,7 @@ int loadfile()
     ifstream infile1("buildings.txt");
     if (!infile1.is_open())
     {
-        cout << "Error opening" << endl;
+        cout << "Error opening buildings.txt" << endl;
     }
     else
     {
@@ -40,7 +40,7 @@ int loadfile()
     ifstream infile2("connections.txt");
     if (!infile2.is_open())
     {
-        cout << "Error" << endl;
+        cout << "Error opening connections.txt" << endl;
         return 1;
     }
 
@@ -55,7 +55,7 @@ int loadfile()
     ifstream infile3("facilities.txt");
     if (!infile3.is_open())
     {
-        cout << "Error" << endl;
+        cout << "Error opening facilities.txt" << endl;
         return 1;
     }
 
@@ -69,7 +69,7 @@ int loadfile()
     ifstream infile4("departments.txt");
     if (!infile4.is_open())
     {
-        cout << "Error" << endl;
+        cout << "Error opening departments.txt" << endl;
         return 1;
     }
 

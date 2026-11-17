@@ -18,7 +18,9 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="CSCE_2110_400_Group_Project_2" targetName="CSCE_2110_400_Group_Project_2" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -27,8 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6edad0a0-9533-488b-bf38-523e502cfaf2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loadfile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/loadfile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/loadfile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,60 +77,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000022433966424" />
-      <entry key="S5" value="1.0477963470887939" />
-      <entry key="S10" value="1.7576286665803205" />
-      <entry key="S30" value="6.842447079541701" />
-      <entry key="S60" value="11.344396865362924" />
-      <entry key="M2" value="14.968047239633508" />
-      <entry key="M5" value="18.859440788798246" />
-      <entry key="M10" value="23.695241730321346" />
-      <entry key="M15" value="28.217749378473787" />
-      <entry key="M30" value="43.24749682074937" />
-      <entry key="H1" value="72.77024881284197" />
-      <entry key="H2" value="108.51348377831397" />
-      <entry key="H4" value="137.6825895848477" />
-      <entry key="D1" value="171.0624066545847" />
-      <entry key="W1" value="177.8370535985035" />
+      <entry key="MS500" value="1.0000005492628758" />
+      <entry key="S2" value="1.0276863118935804" />
+      <entry key="S5" value="1.2829392131745467" />
+      <entry key="S10" value="1.7017068032584124" />
+      <entry key="S30" value="2.3857975058690686" />
+      <entry key="S60" value="2.660996865352889" />
+      <entry key="M2" value="2.8224458980866878" />
+      <entry key="M5" value="3.4479915775912624" />
+      <entry key="M10" value="10.546963440299196" />
+      <entry key="M15" value="22.821255057048255" />
+      <entry key="M30" value="59.760994741989194" />
+      <entry key="H1" value="112.80388691094655" />
+      <entry key="H2" value="171.19466757278323" />
+      <entry key="H4" value="219.3345951671399" />
+      <entry key="D1" value="276.1702106740271" />
+      <entry key="W1" value="287.96599994192604" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="8.184275485694175E-155" />
-      <entry key="S5" value="2.31841989948706E-62" />
-      <entry key="S10" value="1.522635889842401E-31" />
-      <entry key="S30" value="5.362021665192178E-11" />
-      <entry key="S60" value="7.9464532708166E-6" />
-      <entry key="M2" value="0.0038214899524815554" />
-      <entry key="M5" value="0.19366113284487174" />
-      <entry key="M10" value="0.7530378427603056" />
-      <entry key="M15" value="1.193107406243986" />
-      <entry key="M30" value="1.9390155292785103" />
-      <entry key="H1" value="2.6061033300917567" />
-      <entry key="H2" value="3.147997414386812" />
-      <entry key="H4" value="3.5212908445682314" />
-      <entry key="D1" value="3.911249336239425" />
-      <entry key="W1" value="3.9870762144476846" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.2937274615842208E-229" />
+      <entry key="S10" value="3.5968424308939035E-115" />
+      <entry key="S30" value="7.141186049884845E-39" />
+      <entry key="S60" value="9.170525559062002E-20" />
+      <entry key="M2" value="4.105283634525011E-10" />
+      <entry key="M5" value="3.1585419282486617E-4" />
+      <entry key="M10" value="0.030411573467171223" />
+      <entry key="M15" value="0.14044111465616532" />
+      <entry key="M30" value="0.6652557704885699" />
+      <entry key="H1" value="1.5264947419749728" />
+      <entry key="H2" value="2.4092740767686105" />
+      <entry key="H4" value="3.0805468489177814" />
+      <entry key="D1" value="3.825044474862591" />
+      <entry key="W1" value="3.9744022613171817" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.061764805996346E-5" />
-      <entry key="MS500" value="0.13831216913653402" />
-      <entry key="S2" value="0.6098566686582051" />
-      <entry key="S5" value="0.8640275156756279" />
-      <entry key="S10" value="1.6335495592794822" />
-      <entry key="S30" value="6.750923531395479" />
-      <entry key="S60" value="11.281685735522007" />
-      <entry key="M2" value="14.934366929803454" />
-      <entry key="M5" value="19.0316215036407" />
-      <entry key="M10" value="24.429594416304642" />
-      <entry key="M15" value="29.393528704915063" />
-      <entry key="M30" value="45.17096187657879" />
-      <entry key="H1" value="75.36254378947397" />
-      <entry key="H2" value="111.65107781376513" />
-      <entry key="H4" value="141.19727663652625" />
-      <entry key="D1" value="174.97229074481902" />
-      <entry key="W1" value="181.82392714550681" />
+      <entry key="MS100" value="2.030125012308807E-6" />
+      <entry key="MS500" value="0.0726950572923416" />
+      <entry key="S2" value="0.5347452926193159" />
+      <entry key="S5" value="0.9905754645973124" />
+      <entry key="S10" value="1.4931413598174683" />
+      <entry key="S30" value="2.281329148483628" />
+      <entry key="S60" value="2.601516018818775" />
+      <entry key="M2" value="2.790565328123793" />
+      <entry key="M5" value="3.434548672977866" />
+      <entry key="M10" value="10.567520060065412" />
+      <entry key="M15" value="22.951555831197258" />
+      <entry key="M30" value="60.41452066075798" />
+      <entry key="H1" value="114.31801559168167" />
+      <entry key="H2" value="173.59347088842168" />
+      <entry key="H4" value="222.40800211737255" />
+      <entry key="D1" value="279.9936762870733" />
+      <entry key="W1" value="291.9401649368051" />
     </decayedShown>
   </component>
   <component name="ProjectApplicationVersion">
@@ -141,9 +144,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3LqGysJYfGgv1JfDhsPiHHU0z8A" />
-  <component name="ProjectStatusUIService"><![CDATA[{
-  "uiKindId": "Widget"
-}]]></component>
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -151,6 +154,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "C/C++ File.main.cpp.executor": "Run",
+    "CMake Application.CSCE_2110_400_Group_Project_2.executor": "Run",
     "CidrDebugProfileConversion": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -174,16 +179,37 @@
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.CSCE_2110_400_Group_Project_2">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSCE_2110_400_Group_Project_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CSCE_2110_400_Group_Project_2" TARGET_NAME="CSCE_2110_400_Group_Project_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CSCE_2110_400_Group_Project_2" RUN_TARGET_NAME="CSCE_2110_400_Group_Project_2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CSCE-2110.400-Group-Project-2" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="CMake Application.CSCE_2110_400_Group_Project_2" />
+    </list>
   </component>
   <component name="SelectedDebugProfileService"><![CDATA[{
   "profileIdByStamp": [
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.CSCE_2110_400_Group_Project_2",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "87ff8a17-0698-4a95-b8bf-206112bee139"
+    },
     {
       "first": {
         "##RUN_CONFIGURATION##": "C/C++ File.main.cpp"
@@ -191,7 +217,7 @@
       "second": "87ff8a17-0698-4a95-b8bf-206112bee139"
     }
   ],
-  "modificationCount": 5
+  "modificationCount": 7
 }]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
