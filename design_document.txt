@@ -1,0 +1,19 @@
+DESIGN DOCUMENT
+
+This design document goes over and explains the design choices made for the many parts of this project, to help give a clear outline of how this program is structured and why it's structured the way it is.
+To begin, the many functionalities of this program are divided into classes, each confined to their own respective header and implementation files respectively. main.cpp utilizes each of these header files and the functions and structures within them. To explain each grouping of files briefly, the loadfile files use the loadfile class to load data from input files, the HashTable files use the HashTable class to create and structure a hash table, the Graph files use the Graph class to build an adjacency list based off of loaded data, _______. The functionality of some of these classes will be described in further detail below.
+
+
+Hash Table:
+The hash table for this project is implemented via the HashTable class, defined and laid out in the HashTable.h and HashTable.cpp files. More specifically, we chose to implement the hash table as a two-dimensional vector of keys/indexes, in the form of vector<vector<int>> hashTable. This structure was chosen with separate chaining in mind. The hash table can be initialized with however many buckets as defined in the code. Should a collision occur when a key is inserted into a bucket that already has a key inside of it, the table would simply chain the colliding keys with one another, ensuring there's little to no conflict and that one bucket can gracefully handle a large amount of collisions, although that is not ideal.
+Additionally, within the HashTable class are two custom functions to hash/convert inputted data into forms usable in the hash table. The function hash() is meant to convert a proper facility ID in string form into a usable integer key which is returned from the function. hash() takes each character in the ID, multiplies it by 19 (a number I chose at random), and adds it with that original character's value.
+
+Graph:
+The graph for this program is implemented with the Graph class, defined in the Graph.h and Graph.cpp files. As suggested and after some research, I decided to utilize an adjacency list to implement the graph due to its low amount of space and flexible, fast iteration and implementation.
+
+BFS/Shortest Path:
+The Breadth First Search and Shortest Path algorithms/functions are included within the Graph class, due to the fact that both algorithms directly utilize the graph and its components.
+
+Tree:
+
+Reports:
