@@ -2,12 +2,12 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 int loadfile()
 {
-
     string line;
     vector<string> buildings;
     vector<string> connections;
@@ -23,17 +23,17 @@ int loadfile()
     ifstream infile1("buildings.txt");
     if (!infile1.is_open())
     {
-        cout << "Error" << endl;
-        return 1;
+        cout << "Error opening" << endl;
     }
-
-    while (getline(infile1,line))
+    else
     {
-        buildings.push_back(line);
+        while (getline(infile1,line))
+        {
+            buildings.push_back(line);
+        }
+        cout<<"Loaded file: " << filename1 << endl;
+        infile1.close();
     }
-    cout<<"Loaded file: " << filename1 << endl;
-    infile1.close();
-
 
 
 
