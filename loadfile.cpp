@@ -19,11 +19,11 @@ int loadfile()
     string filename3 = "facilities.txt";
     string filename4 = "departments.txt";
 
-
+    //open buildings
     ifstream infile1("buildings.txt");
     if (!infile1.is_open())
     {
-        cout << "Error opening buildings.txt" << endl;
+        cout << "Error opening " << filename1 << endl;
     }
     else
     {
@@ -35,50 +35,56 @@ int loadfile()
         infile1.close();
     }
 
-
-
+    //open connections
     ifstream infile2("connections.txt");
     if (!infile2.is_open())
     {
-        cout << "Error opening connections.txt" << endl;
-        return 1;
-    }
+        cout << "Error opening " << filename2 << endl;
 
-    while (getline(infile2,line))
+    }
+    else
     {
-        connections.push_back(line);
+        while (getline(infile2,line))
+        {
+            connections.push_back(line);
+        }
+        cout<<"Loaded file: " << filename2 << endl;
+        infile2.close();
     }
-    cout<<"Loaded file: " << filename2 << endl;
-    infile2.close();
 
-
+    //open facilities
     ifstream infile3("facilities.txt");
     if (!infile3.is_open())
     {
-        cout << "Error opening facilities.txt" << endl;
-        return 1;
-    }
+        cout << "Error opening " << filename3  << endl;
 
-    while (getline(infile3,line))
+    }
+    else
     {
-        facilities.push_back(line);
+        while (getline(infile3,line))
+        {
+            facilities.push_back(line);
+        }
+        cout<<"Loaded file: " << filename3 << endl;
+        infile3.close();
     }
-    cout<<"Loaded file: " << filename3 << endl;
-    infile3.close();
 
+    //open departments
     ifstream infile4("departments.txt");
     if (!infile4.is_open())
     {
-        cout << "Error opening departments.txt" << endl;
-        return 1;
-    }
+        cout << "Error opening "<< filename4 << endl;
 
-    while (getline(infile4,line))
-    {
-        departments.push_back(line);
     }
-    cout<<"Loaded file: " << filename4 << endl;
-    infile4.close();
+    else
+    {
+        while (getline(infile4,line))
+        {
+            departments.push_back(line);
+        }
+        cout<<"Loaded file: " << filename4 << endl;
+        infile4.close();
+    }
 
 
 
